@@ -1,13 +1,21 @@
-# Sample Hardhat Project
+# Hardhat get Eth price with ChainLink
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Deploy on Local Blockchain
 
-Try running some of the following tasks:
+```
+yarn hardhat node
+```
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+## Deploy on Goerli
+
+```
+yarn hardhat deploy --network goerli
+```
+
+## Test on Local Blockchain
+
+The interface 'contracts/test/MockV3Aggregator.sol' allows to test the PriceFeed on the local Blockchain
+
+```
+yarn hardhat test
 ```
